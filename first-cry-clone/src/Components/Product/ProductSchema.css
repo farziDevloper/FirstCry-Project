@@ -1,0 +1,182 @@
+.mainBox{
+  box-sizing: border-box;
+  margin: 2%;
+  padding: 2%;
+}
+.newRow{
+  display :grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid rgb(209, 206, 206)
+}
+.productDetail {
+    width: 1250px;
+    margin: 0 auto;
+  }
+  
+  .detail__header {
+    padding-top: 23px;
+    margin-bottom: 26px;
+  }
+  
+  .detail__header div {
+    font-size: 12px !important;
+    color: #616161;
+    line-height: 17px;
+  }
+  
+  .detail__header span {
+    font-weight: 700;
+  }
+  
+  .pd_home {
+    cursor: pointer;
+  }
+  
+  .pd_home:hover {
+    text-decoration: underline;
+  }
+  
+  .detail__left {
+    width: 530px;
+    position: sticky;
+    top: 20px;
+  }
+  
+  .detail__right {
+    min-height: 600px;
+    width: 720px;
+    margin-top: -5px;
+  }
+  
+  .prod__name {
+    font-size: 20px;
+    color: #424242;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 9px;
+  }
+  
+  .prod__discription {
+    font-size: 14px;
+    color: #616161;
+    line-height: 20px;
+  }
+  
+  .hr-line {
+    height: 1px;
+    margin: 15px 0;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  
+  .prod__price {
+    font-weight: 600;
+    font-size: 20px;
+    color: #00325f;
+    line-height: 28px;
+    align-items: center;
+    gap: 0.8rem;
+    line-height: 32px;
+  }
+  
+  .r__logo {
+    margin-top: 5px;
+  }
+  
+  .prod__price__original {
+    color: #757575;
+  }
+  
+  .prod__price__original span {
+    text-decoration: line-through;
+  }
+  
+  .prod__disc {
+    font-size: 18px;
+    color: #ff7043 !important;
+  }
+  
+  .pd__text {
+    font-size: 13px;
+    color: #616161;
+    line-height: 18px;
+  }
+  
+  .club__priceDiv {
+    width: 297px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 5px 9px 2px;
+    margin-bottom: 23px;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .club_priceO div:nth-child(2) {
+    font-size: 11px !important;
+    color: #424242;
+    line-height: 16px;
+  }
+  
+  .join__club {
+    color: #ff7043;
+    cursor: pointer;
+  }
+  
+  .prod__color,
+  .prod__size {
+    padding-bottom: 20px;
+    font-size: 14px !important;
+    color: #424242;
+    line-height: 20px;
+  }
+  
+  .prod__size span {
+    border: 1px solid #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .prodD__btn {
+    margin-top: 8px;
+    gap:1.8rem;
+    margin-left: 5rem;
+  }
+  
+  .prodD__btn div {
+    height: 46px;
+    width: 204px;
+    line-height: 47px;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn__add-cart {
+    background-color: #ff7043;
+    color: #fff;
+  }
+  
+  .btn__add-cart:hover {
+    background-color: #ff943d;
+  }
+  
+  .btn__add-short{
+      border: 1px solid #bdbdbd;
+      user-select: none;
+  }
+  
+  .btn__add-short:hover {
+    color: #ff7043;
+    border-color: #ff7043!important;
+  }
+  
+  
+  .hrtD__logo{
+    position: relative;
+    font-size: 18px;
+    top: 3px;
+  }

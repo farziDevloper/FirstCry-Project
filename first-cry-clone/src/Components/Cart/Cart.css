@@ -1,0 +1,32 @@
+#ritesh{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    max-height: 250px;
+    min-height: 250px;
+    margin-bottom: 50px;;
+}
+.images{
+    box-sizing: border-box;
+    /* border: 1px solid gray; */
+    max-height: 390px;
+    min-height: 390px;;
+}
+.images > img{
+    max-height: 250px;
+    min-height: 250px;;
+    margin-bottom: 55px;
+    max-width: 410px;
+    min-width: 410px;
+    margin: 15px;
+}
+.deleteButton{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 15%;
+    /* border: 1px solid black; */
+}
+.abhishek{
+    margin-top: 50px;;
+    margin-bottom: 50px;
+    /* border: 8px solid black; */
+}

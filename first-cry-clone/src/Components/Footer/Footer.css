@@ -1,0 +1,42 @@
+.main{
+    background-color: #d9f3f4;
+    height:1000px;
+    margin-top:100px;
+}
+.b_r {
+    background-color: #fff;
+    border-radius: 30px;
+    clear: both;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: -31px;
+    width: 470px;
+    z-index: 3;
+    box-shadow: 0 0 3px #e0e0e0;
+    color:orange;
+    font-size:30px;
+
+   
+}
+.all {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto ;
+}
+.count {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto ;
+}
+.last{
+    font-size: 10px;
+    padding:1%
+}
+p {
+    font-size: 13px
+}
+p :hover {
+    text-decoration: underline;
+    cursor: pointer;
+    /* background-color: red; */
+}

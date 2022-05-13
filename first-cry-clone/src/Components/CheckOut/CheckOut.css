@@ -1,0 +1,28 @@
+#checkOut > img{
+ width: 355px;
+ height: 200px;
+}
+.checkoutImage{
+    margin-top: 5%;
+    width: 180px;
+    height: 180px;
+}
+#checkOut{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+.checkOutPage{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.totalpage{
+    box-sizing: border-box;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: larger;
+}
+.input_box{
+    width: 250px;
+    height: 35px;
+    margin-bottom: 15px;
+}

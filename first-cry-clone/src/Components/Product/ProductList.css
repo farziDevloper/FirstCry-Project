@@ -1,0 +1,316 @@
+.second_div {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 1253px;
+    margin: 0 auto;
+    z-index: 2;
+    justify-content: space-between;
+  }
+  .options > Button{
+    margin:5px 15px
+  }
+  .First_div {
+    box-shadow: 0 0 0 1px #fff;
+    background-color: rgb(211, 203, 203);
+  }
+  
+  .divtext1 {
+    font-size: 13px;
+    color: #3d3d3d;
+  }
+  
+  .divtext2 {
+    font-size: 15px;
+    color: #dd5808;
+  }
+  
+
+  
+  .secondBannnerImg > img{
+    width:98%;
+    margin-bottom: 55px;
+  }
+
+  
+  .divcontainer {
+    background-color: #58f3de;
+  }
+  
+  .head {
+    padding: 0 50px;
+    height: 47px;
+    line-height: 47px;
+    background-color: #88878a;
+    border: 1px solid #2d2d2d;
+    justify-content: space-between;
+  }
+  .fleft > Button{
+      margin:5px 15px;
+      height:35px;
+  }
+  
+  .fleft{
+    display: flex;
+  }
+  .fleft div:nth-child(1) {
+    font-size: 15px;
+    color: #fdfdfd;
+    margin-right: 10px;
+  }
+  
+  .fleft div:nth-child(2) {
+    font-size: 12px;
+    color: #fdfdfd;
+  }
+  .sortText{
+      margin-top: -1px;
+      /* margin-left: 10px; */
+      font-weight: 700;
+      font-size: large;
+  }
+  
+  .divCreater {
+    margin-left: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+    height: 47px;
+    color: #fdfdfd;
+  }
+  
+  .divCreater select {
+    width: 150px;
+    margin-left: 10px;
+    border: 1px solid #2d2d2d;
+    border-radius: 2px;
+    height: 21px;
+    line-height: 18px;
+    outline: none;
+    background-color: #e5e7fc;
+    color: #fdfdfd;
+    cursor: pointer;
+  }
+  
+  .rightDiv {
+    align-items: center;
+  }
+  
+  .divCreater div:nth-child(1) {
+    font-size: 13px;
+    color: #a9a9a9;
+  }
+  
+  .myicons {
+    margin-left: 10px;
+    color: #a9a9a9;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+  }
+  
+  .myicons div:nth-child(n):hover {
+    color: #ffff;
+  }
+  
+  .myicons div:nth-child(1) {
+    font-size: 13px;
+  }
+  
+  .myicons div:nth-child(1):hover {
+    color: #a9a9a9;
+  }
+  
+  .menuBar {
+    background-color: #7e7b7b;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 50px;
+    border-bottom: 1px solid #2d2d2d;
+  
+  }
+  
+  .options {
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+    color: #c7c7c7;
+    margin-top: 15px;
+    display: flex;
+  }
+  .options > Button{
+    margin:5px 15px;
+    height:35px;
+  }
+  
+  .options div:nth-child(n) {
+    border-right: 1px solid #2d2d2d;
+    color: #c7c7c7;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 3px solid transparent;
+    line-height: 45px;
+  }
+  
+  .options div:first-child {
+    font-size: 14px;
+    border: none;
+    border-right: none;
+    cursor: default;
+  }
+  
+  .options div:first-child:hover {
+    border-bottom: transparent !important;
+  }
+  
+  .options div:nth-child(n):hover {
+    border-bottom: 3px solid #dd5808;
+  }
+  
+  
+  
+  .Pincode input {
+    background: #47d1f3;
+    height: 30px;
+    width: 130px;
+    border: 1px solid #2d2d2d;
+    border-radius: 3px;
+    padding: 0 10px;
+    color: #bdbdbd;
+    font-size: 12px;
+    outline: none;
+    /* float: right; */
+    margin-left: 1209px;
+  }
+  
+  .buttons {
+    position: absolute;
+    right: 50px;
+    top: 18px;
+    font-size: 12px;
+        color: #ff7043;
+    line-height: 17px;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+  
+    
+  .maincontainer {
+    width: 1253px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  
+  .products {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .productPart1 {
+    float: left;
+    width: 290px;
+    height: 500px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    background-color: rgb(217, 238, 236);
+  }
+  
+  .products > div > div {
+    margin-right: 20px;
+  }
+  
+  .productsimg {
+    height: 330px;
+    padding-top: 0.46rem;
+  }
+  
+  .productsimg img {
+    width: 260px;
+    height: 315px;
+    margin-top: 0;
+  }
+  
+  .title_details {
+    line-height: 18px;
+    padding-bottom: 4px;
+  }
+  
+  .productPart1 .title_details p {
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: #363636;
+  }
+  
+  .productPart1 .title_details p:nth-child(2) {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #959595;
+  }
+  
+  .productPart1 .title_details span {
+    display: inline;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+  
+  .newPrice {
+    border-right: solid 1px #dadada;
+  }
+  
+
+  .price {
+    font-size: 14px;
+    color: #424242;
+    line-height: 20px;
+    font-weight: bold;
+  }
+  
+  .discount {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  .blockData {
+    margin: 5px 0 12px 0;
+    overflow: hidden;
+    clear: both;
+  }
+  
+  .starImg {
+    background-image: url(https://cdn.fcglcdn.com/brainbees/images/club_flag_listing_desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16px;
+    width: 16px;
+    display: inline-block !important;
+    margin: 0 2px 0 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+    top: 4px;
+    border-right: none !important;
+  }
+  
+  .pText {
+    font-weight: bold;
+    font-size: 12px;
+    color: #757575;
+    line-height: 17px;
+  }
+  
+  .show {
+    padding: 0 10px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff7043;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
