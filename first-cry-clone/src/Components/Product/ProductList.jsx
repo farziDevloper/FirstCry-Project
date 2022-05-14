@@ -6,20 +6,20 @@ import { BiRupee } from "react-icons/bi";
 import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from "react-redux";
 import {mydata }from "../../redux/actions/productAction"
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { fetchProductById } from "../../redux/actions/productAction";
-import { addProductTocartData } from "../../redux/actions/userAction";
+import {  Link } from "react-router-dom";
+
+
 import { NavLink } from 'react-router-dom';
 
 
 
 export const ProductList = () => {
-  const navigate = useNavigate()
+ 
 
     const [val, setVal] = useState("");
     const [value, setValue] = useState([]);
     
-    const { id } = useParams();
+  
   
     const dispatch = useDispatch();
     const data = useSelector((state) => state.product.products);
@@ -51,10 +51,6 @@ export const ProductList = () => {
         setValue([...outcome])
       }
   }
-
- 
-  const [show, setShow] = useState(false);
-
   return (
     <div>
       <div className="First_div">
