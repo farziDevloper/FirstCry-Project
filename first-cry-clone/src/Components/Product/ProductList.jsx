@@ -23,7 +23,7 @@ export const ProductList = () => {
   
     const dispatch = useDispatch();
     const data = useSelector((state) => state.product.products);
-      console.log("data", data);
+      // console.log("data", data);
 
    
     
