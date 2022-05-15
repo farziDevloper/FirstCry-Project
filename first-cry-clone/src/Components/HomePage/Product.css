@@ -2,6 +2,7 @@
     position: relative;
     top: -21px;
     background-color: #eee;
+    text-decoration: none !important;
   }
   
   .premiumSection__container {
@@ -13,6 +14,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none !important;
   }
   
   .p__title {
@@ -21,6 +23,7 @@
     font-weight: 700;
     text-align: center;
     padding-top: 1.6rem;
+    text-decoration: none !important;
   }
   
   .premiumSection__cBox {
@@ -36,16 +39,19 @@
     transition: box-shadow 150ms ease-out, bottom 0.2s ease;
     -webkit-transition: box-shadow 150ms ease-out, bottom 0.2s ease;
     cursor: pointer;
+    text-decoration: none !important;
   }
   
   .premiumSection__cBox img {
     width: 100%;
+    text-decoration: none !important;
   }
   
   .p__text {
     margin: 0 22px;
     display: block;
     height: 62px;
+    text-decoration: none !important;
   }
   
   .p__head {
@@ -53,6 +59,7 @@
     font-size: 15px;
     color: #363636;
     margin-top: 19px;
+    text-decoration: none !important;
   }
   
   .premiumSection__cBox {
@@ -60,6 +67,7 @@
     white-space: nowrap;
     overflow: hidden;
     font-size: 16px;
+    text-decoration: none !important;
   }
   
   .discription {
@@ -73,6 +81,7 @@
     width: 260px;
     height: 17px;
     float: left;
+    text-decoration: none !important;
   }
   
   p.shop-now {
@@ -80,17 +89,20 @@
     /* display: none; */
     font-size: 16px;
     margin-top: 8px;
+    text-decoration: none;
   }
   
   .premiumSection__cBox:hover {
     bottom: 2px;
     box-shadow: 3px 5px 8px #ccc;
+    text-decoration: none;
   }
   
   .p__text {
     font-size: 15px;
     color: #9e9e9e;
     text-align: left;
+    text-decoration: none;
   }
   
   .view__all {
@@ -99,6 +111,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none !important;
   }
   
   .v__1,
@@ -115,13 +128,16 @@
     margin-bottom: 20px;
     cursor: pointer;
     transition: bottom 0.3s ease;
+    text-decoration: none !important;
   }
   
   .v__1 {
     margin-left: 1%;
+    text-decoration: none !important;
   }
   
   :is(.v__1, .v__2):hover {
     box-shadow: 3px 5px 8px #ccc;
+    text-decoration: none !important;
   }
   

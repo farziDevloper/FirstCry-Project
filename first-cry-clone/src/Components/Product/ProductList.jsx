@@ -10,23 +10,14 @@ import {  Link } from "react-router-dom";
 
 
 import { NavLink } from 'react-router-dom';
-
-
-
 export const ProductList = () => {
- 
-
     const [val, setVal] = useState("");
     const [value, setValue] = useState([]);
-    
-  
-  
+     
     const dispatch = useDispatch();
     const data = useSelector((state) => state.product.products);
       // console.log("data", data);
-
-   
-    
+  
   const sortBylow = (m) => {
     if (m === "l") {
       let res = data.sort((a, b) => a.price - b.price);
@@ -51,10 +42,14 @@ export const ProductList = () => {
         setValue([...outcome])
       }
   }
+  const [show, setShow ] = useState(false)
+  const [filt , setFilt ] = useState(false)
+
+
   return (
     <div>
-      <div className="First_div">
-        <div className="second_div dis-flex">
+      <div className="Firstdiv">
+        <div className="seconddiv dis-flex">
           <div className="divtext1">
             Home / Premium Boutiques / Own the Looks
           </div>
@@ -75,48 +70,36 @@ export const ProductList = () => {
         <div className="divcontainer">
           <div className="head dis-flex">
             <div className="fleft"> 
-            <p className="sortText">Sort By: </p>
-<Button  size="small" variant="contained" onClick={() => { sortBylow("l")}} >Low to High</Button>
+<Button onClick={() => setShow(!show)} className="filterBtn" >Sort By: </Button>
+    {show && <div className="btnsortFilter"> <Button  size="small" variant="contained" onClick={() => { sortBylow("l")}} >Low to High</Button>
 <Button variant="contained"   onClick={() => { sortBylow("h")}} >High to Low</Button>
 <Button variant="contained"   onClick={() => { atoz("a")}}  >A to Z</Button>   
-<Button variant="contained"   onClick={() => { atoz("z")}}  >A to Z</Button> 
+<Button variant="contained"   onClick={() => { atoz("z")}}  >Z to A</Button> </div> }
             </div>
-            <div className="rightDiv dis-flex">
-              <div className="divCreater dis-flex">
+            <div className="rightDiv ">
+              <div className="divCreater ">
               
                 <div className="fdropdown">
 
            
                 </div>
               </div>
-              <div className="myicons dis-flex">
-                <div>Share :</div>
-                <div>
-                 
-                  <Link to="https://myaccount.google.com/profile" >    <BsPinterest  /></Link>
-                </div>
-                <div>
-              
-                  <Link to="https://myaccount.google.com/profile" >    <BsFacebook /></Link>
-                </div>
-                <div>
-                 <Link to="https://myaccount.google.com/profile" > <FaGooglePlus  /></Link>
-                </div>
-              </div>
+        
             </div>
           </div>
         </div>
         <div className="menuBar">
           <div className="options">
-            <p className="sortText">Filter By: </p>
+        <Button onClick={() => setFilt(!filt)} className="filterBtn" >Filter By: </Button>
 
-          <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Clothing")} > Clothing </Button>
+          {filt && <div className="btnsortFilter">   <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Clothing")} > Clothing </Button>
           <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Toys")} > Toys </Button>
           <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Shoes")} > Shoes </Button>
           <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Slippers")} > Slippers </Button>
           <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Baggings")} > Bags </Button>
           <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Electronic")} > Electronic </Button>
-          <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Sanitiser")} > Sanitiser </Button>
+          <Button id="filter_btns"  variant="contained"   onClick={() => setVal("Sanitiser")} > Sanitiser </Button> </div>}
+
           </div>
         </div>
        
@@ -143,7 +126,7 @@ export const ProductList = () => {
                
                 <div className="productPart1"            
                 >
-                   <NavLink to={`/products/${item.id}`} >
+                   <NavLink to={`/products/${item.id}`} className="navMapping" >
                 
                     <div className="productsimg">
                       <img
@@ -153,7 +136,7 @@ export const ProductList = () => {
                       />
                     </div>
 
-                    <div className="title_details">
+                    <div className="details">
                       <p>{item.title}</p>
                       <p>Multiple Sizes Available</p>
                       <span className="price newPrice">

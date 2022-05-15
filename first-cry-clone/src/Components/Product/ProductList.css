@@ -1,3 +1,26 @@
+.btnsortFilter>Button{
+margin-left: 10px;
+
+}
+.btnsortFilter>Button:active{
+  background-color: cornsilk;
+}
+p:hover{
+  text-decoration: none !important;
+}
+
+.navMapping{
+  text-decoration: none;
+}
+.navMapping:hover{
+
+    transform: scale(1.5);
+
+}
+.filterBtn{
+  color:black !important;
+  background-color:white !important;
+}
 .second_div {
     padding-top: 20px;
     padding-bottom: 15px;
@@ -9,7 +32,7 @@
   .options > Button{
     margin:5px 15px
   }
-  .First_div {
+  .Firstdiv {
     box-shadow: 0 0 0 1px #fff;
     background-color: rgb(211, 203, 203);
   }
@@ -33,7 +56,7 @@
 
   
   .divcontainer {
-    background-color: #58f3de;
+    background-color: #ffffff;
   }
   
   .head {
@@ -54,7 +77,7 @@
   }
   .fleft div:nth-child(1) {
     font-size: 15px;
-    color: #fdfdfd;
+    color: #f0e5e5;
     margin-right: 10px;
   }
   
@@ -216,7 +239,7 @@
     cursor: pointer;
     text-align: center;
     position: relative;
-    background-color: rgb(217, 238, 236);
+    background-color: rgb(255, 255, 255);
   }
   
   .products > div > div {
@@ -234,24 +257,24 @@
     margin-top: 0;
   }
   
-  .title_details {
+  .details {
     line-height: 18px;
     padding-bottom: 4px;
   }
   
-  .productPart1 .title_details p {
+  .productPart1 .details p {
     font-size: 15px;
     margin-bottom: 3px;
     color: #363636;
   }
   
-  .productPart1 .title_details p:nth-child(2) {
+  .productPart1 .details p:nth-child(2) {
     font-size: 12px;
     margin-bottom: 5px;
     color: #959595;
   }
   
-  .productPart1 .title_details span {
+  .productPart1 .details span {
     display: inline;
     margin-right: 10px;
     padding-right: 10px;

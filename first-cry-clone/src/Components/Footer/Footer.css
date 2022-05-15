@@ -1,7 +1,11 @@
+
 .main{
     background-color: #d9f3f4;
-    height:1000px;
-    margin-top:100px;
+    box-sizing: border-box;
+    /* margin: 5px; */
+    padding: 25px;
+    font-size: 12px;font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
 }
 .b_r {
     background-color: #fff;
@@ -16,9 +20,7 @@
     z-index: 3;
     box-shadow: 0 0 3px #e0e0e0;
     color:orange;
-    font-size:30px;
-
-   
+    font-size:30px;   
 }
 .all {
     display:grid;
@@ -35,8 +37,14 @@
 p {
     font-size: 13px
 }
-p :hover {
+p:hover {
     text-decoration: underline;
     cursor: pointer;
     /* background-color: red; */
 }
+
+@media screen and (min-width: 480px) {
+    .b_r , .count, .last ,img {display: flex; flex-wrap:wrap;width:75%;}
+    /* .all{display: flex;flex-basis: auto;} */
+    /* .main {margin-left: 216px;} */
+  }
