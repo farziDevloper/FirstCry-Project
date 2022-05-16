@@ -14,7 +14,7 @@ import "./Cart.css"
 
 export const Cart = () => {
     const dispatch = useDispatch();
-    const state = useSelector((state)  => state.handleCart );
+    const state = useSelector((state)  => state.handleCart);
     const handleClose = (item) => {
             dispatch(deleteFromCart(item));
     }
@@ -39,25 +39,19 @@ export const Cart = () => {
     const cartItems = (cartItem) => {
         return(
             <>
-                <div className="abhishek">
-                <div id='ritesh'>
-                    <div className="images">
-                        <img src={cartItem.images} alt={cartItem.title} />
-                    </div>
-                    <div>
-                    <h1>{cartItem.title}</h1>
-                    <h3><span> <b>₹ </b></span> {cartItem.price}</h3>
-                    </div>
-                    <div className="deleteButton">
-                    <Button onClick={() =>  handleClose(cartItem)} variant="contained"
+             <div className="div">
+           <img src={cartItem.images} alt={cartItem.title} />
+          <div>
+         <h1>{cartItem.title}</h1>
+            <h2><span> <b>₹ </b></span> {cartItem.price}</h2>
+             </div>
+          <div>
+      <Button onClick={() =>  handleClose(cartItem)} variant="contained"
                      style={{width:"35%", height:'55px'}} startIcon={<DeleteIcon />}>
                     <b>  Delete</b>
                     </Button>
-                    </div>
-                </div>
-
-                </div>
-
+    </div>
+    </div>
 
 
             </>
@@ -75,6 +69,11 @@ export const Cart = () => {
       <div>
 
       {state.length !==0 && btn()}
+
+   
+
+
+
       </div>
     </>
 }

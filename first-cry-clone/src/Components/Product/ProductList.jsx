@@ -126,7 +126,7 @@ export const ProductList = () => {
                
                 <div className="productPart1"            
                 >
-                   <NavLink to={`/products/${item.id}`} className="navMapping" >
+                   <NavLink to={`/products/${item.id}`} className="navMapping"  >
                 
                     <div className="productsimg">
                       <img

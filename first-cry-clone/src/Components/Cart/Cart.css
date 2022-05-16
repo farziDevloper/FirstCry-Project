@@ -1,10 +1,19 @@
+.abhishek{
+    margin-top: 50px;;
+    margin-bottom: 50px;
+    border: 8px solid black;
+    text-decoration: none !important;
+    background-color:black;
+ } 
 #ritesh{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    max-height: 250px;
+    /* grid-template-columns: 33% 33% 33%; */
+    /* max-height: 250px; */
     min-height: 250px;
     margin-bottom: 50px;
     text-decoration: none !important;
+    background-color: blanchedalmond;
+    /* overflow: hidden; */
 }
 .images{
     box-sizing: border-box;
@@ -29,13 +38,16 @@
     /* border: 1px solid black; */
     text-decoration: none !important;
 }
-.abhishek{
-    margin-top: 50px;;
-    margin-bottom: 50px;
-    /* border: 8px solid black; */
-    text-decoration: none !important;
-}
 @media screen and (min-width: 480px) {
     #ritesh {width: 200px; float: left;}
     #images {margin-left: 216px;}
+  }
+  .div{
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+            border-top: 1px solid black;
+  }
+  .div > img {
+      max-width: 300px;
+      max-height: 300px;
   }

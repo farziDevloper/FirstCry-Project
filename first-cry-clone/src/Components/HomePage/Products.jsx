@@ -108,10 +108,10 @@ export const Products = () =>  {
 
       <div className="viewall">
         <div className="v1">
-          <Link to="/products">View All Boutiques <IoMdArrowDropright className="arrow_logo" /> </Link>
+          <Link to="/products">View All Boutiques <IoMdArrowDropright className="arrowlogo" /> </Link>
         </div>
         <div className="v2">
-          <Link to="/products"> View All Premium Brands <IoMdArrowDropright className="arrow_logo" /> </Link>
+          <Link to="/products"> View All Premium Brands <IoMdArrowDropright className="arrowlogo" /> </Link>
         </div>
       </div>
     </div>
