@@ -1,5 +1,6 @@
 .App {
  text-decoration: none;
+ background-color: rgba(222, 235, 247, 0.74);
 }
 
 .App-logo {
@@ -24,9 +25,7 @@
   color: white;
 }
 
-.App-link {
-  /* color: #61dafb; */
-}
+
 
 @keyframes App-logo-spin {
   from {

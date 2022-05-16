@@ -43,8 +43,19 @@ p:hover {
     /* background-color: red; */
 }
 
-@media screen and (min-width: 480px) {
-    .b_r , .count, .last ,img {display: flex; flex-wrap:wrap;width:75%;}
-    /* .all{display: flex;flex-basis: auto;} */
-    /* .main {margin-left: 216px;} */
+@media screen and (max-width: 786px) {
+   .all{
+       display: grid;
+       grid-template-columns: auto auto;
+   }
+  
+    
   }
+  @media screen and (max-width: 480px) {
+    .all{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+   
+     
+   }

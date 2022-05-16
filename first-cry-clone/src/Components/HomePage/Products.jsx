@@ -91,14 +91,14 @@ export const Products = () =>  {
   
   return (<>
       <div className="premiumSection">
-    <div className="p__title">PREMIUM BOUTIQUES</div>
-      <div className="premiumSection__container">
+    <div className="ptitle">PREMIUM BOUTIQUES</div>
+      <div className="premiumSectioncontainer">
         {data.map((item) => (
-          <div className="premiumSection__cBox" key={item.id}>
+          <div className="premiumSectioncBox" key={item.id}>
             <img src={item.image} alt=".." />
             <Link to={item.link}>
-              <div className="p__text">
-                <div className="p__head">{item.title}</div>
+              <div className="ptext">
+                <div className="phead">{item.title}</div>
                 <div className="desc">{item.desc}</div>
               </div>
             </Link>
@@ -106,11 +106,11 @@ export const Products = () =>  {
         ))}
       </div>
 
-      <div className="view__all">
-        <div className="v__1">
+      <div className="viewall">
+        <div className="v1">
           <Link to="/products">View All Boutiques <IoMdArrowDropright className="arrow_logo" /> </Link>
         </div>
-        <div className="v__2">
+        <div className="v2">
           <Link to="/products"> View All Premium Brands <IoMdArrowDropright className="arrow_logo" /> </Link>
         </div>
       </div>
