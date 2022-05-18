@@ -2,8 +2,10 @@ import Button from '@mui/material/Button';
 import './Login.css';
 import React , {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios"
 
-export const Login = () => {
+export const Login = ({setLoginUser}) => {
+    const navigate = useNavigate();
     const [user, setUser ]  = useState({
         email: "",
         password: "",
@@ -16,8 +18,15 @@ export const Login = () => {
             })
         }
 
+        const login = () => {
+            axios.post(`http://localhost:7557/login`, user)
+            .then(response =>{alert(response.data.message)
+            setLoginUser(response.data.user)
+            navigate("/")
+            } )
+        }
 
-    const navigate = useNavigate();
+
     return <>
     <div className="login">
         <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="home" />
@@ -28,9 +37,9 @@ export const Login = () => {
             <br/>
             <input type ="password" name='password' value ={user.password} onChange={handleChange} placeholder="Password" className="inputBox" required />
             <br/>
-            <Button className="inputBox Button" onClick={() => {navigate('/')}}>Login</Button>
+            <Button className="inputBox Button" onClick={() => {login()}}>Login</Button>
             </form>
-            <h4 style={{textAlign:'center'}}>If Not Registered <span style={{color:"red"}} onClick={() => {navigate('/signup')}}> Click Here</span> to Register</h4>
+            <h4 style={{textAlign:'center'}}>If Not Registered <span style={{color:"red",textDecoration:'underLine',cursor:'pointer' }} onClick={() => {navigate('/signup')}}> Click Here</span> to Register</h4>
 
         </div>
     </div>

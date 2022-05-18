@@ -2,10 +2,12 @@ import React, { useState }  from 'react';
 import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
 import "./Signup.css"
+import axios from "axios"
+
+
 export const SignUp = () => {
     const [user,setUser] = useState({
-        name: '',
-     
+        name: '',     
         email: '',
         password: '',
         reEnterPassword:''
@@ -38,6 +40,21 @@ export const SignUp = () => {
 //     console.log(data);
 // }
 
+const Register = (e) => {
+    e.preventDefault();
+    const {name, email, password , reEnterPassword} = user
+    if(name && email && password && (password === reEnterPassword)){
+        // alert("Data Posted to Register")
+        axios.post('http://localhost:7557/register', user )
+        .then((response) => {
+            alert(response.data.message)
+            navigate('/login')
+        })
+    }
+    else {
+        alert ("Invalid data posted")
+    }
+}
      
 
 
@@ -58,7 +75,8 @@ export const SignUp = () => {
         <br/>
         <input type="password" name='reEnterPassword' onChange={handleChange}   value={user.reEnterPassword} placeholder="Re-Enter Password" className="signUpBox"required />
         <br/>
-        <input type="submit" value = "Submit"/>
+        {/* <input type="submit" value = "Submit"  /> */}
+        <Button className="inputBox Button" onClick={Register}>Register</Button>
         </form>
 
         <h4 style={{textAlign:'center'}}>If Already Registered <span style={{color:"red"}} onClick={() => {navigate('/login')}}> Click Here</span> to Login</h4>

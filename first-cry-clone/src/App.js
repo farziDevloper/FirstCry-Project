@@ -11,21 +11,30 @@ import { Sucs } from "./Components/Sucs/Sucs";
 import { Footer } from "./Components/Footer/Footer";
 import { Login } from "./Components/Login/Login";
 import { SignUp } from "./Components/SignUp/SignUp";
+import { useState } from "react";
 
 function App() {
+  const [user , setLoginUser] = useState({
+    name: '',     
+    email: '',
+    password: ''
+  })
   return (
     <div className="App">
       <NavBar />
       <Head />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={
+        user && user._id ?  <HomePage /> : <Login  setLoginUser={setLoginUser} />
+        
+        } />
         <Route path={"/products"} element={<ProductPage />} />
         <Route path="/products/:id" element={<ProductSchema />} />
         <Route path={"/cart"} element={<Cart />} />
         <Route path={"/checkout"} element={<CheckOut />} />
         <Route path={"/success"} element={<Sucs />} />
-        <Route path={"/login"} element={<Login />} />
+        <Route path={"/login"} element={<Login setLoginUser={setLoginUser} />} />
         <Route path={"/signup"} element={<SignUp />} />
       </Routes>
       <Footer />
