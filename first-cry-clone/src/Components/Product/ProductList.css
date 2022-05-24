@@ -50,7 +50,7 @@ p:hover{
 
   
   .secondBannnerImg > img{
-    width:50%;
+    width:100%;
     margin-bottom: 55px;
   }
 
@@ -337,3 +337,15 @@ p:hover{
     text-align: center;
   }
   
+  #sort_btns{
+    border: none;
+    background-color: rgb(245, 173, 173);
+    color:black;
+    font-weight: 900;
+    font-display:initial;
+  }
+  .active , #sort_btns:hover{
+    background-color:#09c4f3;
+    color:rgb(249, 69, 37);
+
+  }

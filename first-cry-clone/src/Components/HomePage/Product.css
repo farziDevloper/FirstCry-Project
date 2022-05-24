@@ -1,9 +1,11 @@
+*{
+  text-decoration: none !important;
 
+}
 .premiumSection {
     position: relative;
     top: -21px;
     background-color: #eee;
-    text-decoration: none !important;
   }
   
   .premiumSectioncontainer {
@@ -15,7 +17,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    text-decoration: none !important;
+
   }
   
   .ptitle {
@@ -24,7 +26,7 @@
     font-weight: 700;
     text-align: center;
     padding-top: 1.6rem;
-    text-decoration: none !important;
+   
   }
   
   .premiumSectioncBox {
@@ -115,12 +117,11 @@
     text-decoration: none !important;
   }
   
-  .v1,
-  .v2 {
+  #v1, #v2 {
     width: 48%;
     height: 68px;
     line-height: 68px;
-    background-color: #fff;
+    background-color: rgb(231, 220, 220);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,22 +130,21 @@
     margin-bottom: 20px;
     cursor: pointer;
     transition: bottom 0.3s ease;
-    text-decoration: none !important;
+    color:black !important;
   }
   
-  .v1 {
+  #v1 {
     margin-left: 1%;
-    text-decoration: none !important;
-    background-color: bisque;
   }
-  
-  :is(.v1, .v2):hover {
-    box-shadow: 3px 5px 8px #ccc;
-    text-decoration: none !important;
+  #v1:hover{
+    text-decoration: underline !important;
+  }
+
+  #v2:hover{
+    text-decoration: underline !important;
   }
   
   .arrowlogo{
-    /* text-decoration: none !important; */
     height: 22px;
     width: 55px;
   }

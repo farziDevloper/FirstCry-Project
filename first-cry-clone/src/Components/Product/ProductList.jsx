@@ -71,10 +71,11 @@ export const ProductList = () => {
           <div className="head dis-flex">
             <div className="fleft"> 
 <Button onClick={() => setShow(!show)} className="filterBtn" >Sort By: </Button>
-    {show && <div className="btnsortFilter"> <Button  size="small" variant="contained" onClick={() => { sortBylow("l")}} >Low to High</Button>
-<Button variant="contained"   onClick={() => { sortBylow("h")}} >High to Low</Button>
-<Button variant="contained"   onClick={() => { atoz("a")}}  >A to Z</Button>   
-<Button variant="contained"   onClick={() => { atoz("z")}}  >Z to A</Button> </div> }
+ {show && <div className="btnsortFilter"> 
+ <Button id="sort_btns"  size="small" variant="contained" onClick={() => { sortBylow("l")}} >Low to High</Button>
+<Button id="sort_btns"  className="active" variant="contained"   onClick={() => { sortBylow("h")}} >High to Low</Button>
+<Button id="sort_btns"   variant="contained"   onClick={() => { atoz("a")}}  >A to Z</Button>   
+<Button id="sort_btns"   variant="contained"   onClick={() => { atoz("z")}}  >Z to A</Button> </div> }
             </div>
             <div className="rightDiv ">
               <div className="divCreater ">

@@ -107,11 +107,11 @@ export const Products = () =>  {
       </div>
 
       <div className="viewall">
-        <div className="v1">
-          <Link to="/products">View All Boutiques <IoMdArrowDropright className="arrowlogo" /> </Link>
+        <div id="v1">
+          <Link to="/products" style={{color:'black',fontSize:'20px',fontWeight:'bold' }} >View All Boutiques <IoMdArrowDropright className="arrowlogo" /> </Link>
         </div>
-        <div className="v2">
-          <Link to="/products"> View All Premium Brands <IoMdArrowDropright className="arrowlogo" /> </Link>
+        <div id="v2">
+          <Link to="/products" style={{color:'black',fontSize:'20px',fontWeight:'bold' }} >  View All Premium Brands <IoMdArrowDropright className="arrowlogo" /> </Link>
         </div>
       </div>
     </div>

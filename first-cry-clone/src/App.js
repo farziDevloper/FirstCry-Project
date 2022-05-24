@@ -12,6 +12,7 @@ import { Footer } from "./Components/Footer/Footer";
 import { Login } from "./Components/Login/Login";
 import { SignUp } from "./Components/SignUp/SignUp";
 import { useState } from "react";
+// import { Profile } from "./Components/Profile/Profile";
 
 function App() {
   const [user , setLoginUser] = useState({
@@ -25,10 +26,7 @@ function App() {
       <Head />
 
       <Routes>
-        <Route path="/" element={
-        user && user._id ?  <HomePage /> : <Login  setLoginUser={setLoginUser} />
-        
-        } />
+        <Route path="/" element={   <HomePage setLoginUser={setLoginUser} />   } />
         <Route path={"/products"} element={<ProductPage />} />
         <Route path="/products/:id" element={<ProductSchema />} />
         <Route path={"/cart"} element={<Cart />} />
@@ -38,6 +36,7 @@ function App() {
         <Route path={"/signup"} element={<SignUp />} />
       </Routes>
       <Footer />
+      {/* <Profile  setLoginUser={setLoginUser} /> */}
     </div>
   );
 }
