@@ -6,13 +6,11 @@ import { useSelector } from 'react-redux';
 import {Icon, Text} from "../Style"
 import { Input, SearchIcon } from "./Style";
 
-// import { useDispatch, useSelector } from "react-redux";
 
 
 export const  NavBar =() => {
   const state = useSelector((state) => state.handleCart)
 
-//   const dispatch = useDispatch();
   return (
     <>
     <div className="flex pad gap4" >

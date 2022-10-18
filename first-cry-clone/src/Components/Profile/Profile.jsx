@@ -5,7 +5,6 @@ export const Profile =({setLoginUser}) => {
 
     
     return <>
-    {/* {console.log(user)} */}
     <div className='mainDiv'>
         <div className="leftDiv">
             <h1>My Account</h1>
