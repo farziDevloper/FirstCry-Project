@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
 import { BiSearch } from "react-icons/bi";
 import { VscLocation } from "react-icons/vsc";
 import { useSelector } from 'react-redux';
-import { BsCart } from "react-icons/bs";
-
-
+import {Icon, Text} from "../Style"
+import { Input, SearchIcon } from "./Style";
 
 // import { useDispatch, useSelector } from "react-redux";
 
@@ -17,51 +15,54 @@ export const  NavBar =() => {
 //   const dispatch = useDispatch();
   return (
     <>
-    <div id="topNavbar">
-        <div> 
-        <Link to="/">
-                <img
+    <div className="flex pad gap4" >
+        <Link to="/" className=" mr12">
+                <Icon
                   src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png"
                   alt="logo"
                 />
               </Link>
-        </div>
-        <div className="navsearchBox">
-      <input type="text" placeholder="search for Products" className="intBox" />
-              <BiSearch className="searchicon" />
-        </div>
-        <div className="navlistItem"
-                style={{ position: "relative", top: "2px" }}
-              >
-                <VscLocation className="navicon" />
-                <Link to="/">Select location</Link>
-        </div>
-        <div className="navlistItem">
-                <Link to="/">Stores & Preschools</Link>
-     </div>
-     <div className="navlistItem">
-                <Link to="/">Support</Link>
-              </div>
-              <div className="navlistItem">
-                <Link to="/">Track Order</Link>
-              </div>
-              <div className="navlistItem">
-                <Link to="/">FirstCry Parenting</Link>
-              </div>
-              <div className="navlistItem">
-            <Link to="/login">Login/Register</Link>
-            </div>
-            <div className="navlistItem">
-               
-                <Link to="/">Shortlist</Link>
-              </div>
-              <div className="navlistItem">
-                <Link to="/cart" className="">
-                  <div className="cartnumber">
-                  Cart( {state.length} )
-                  </div>
+      <Input placeholder="search for Products" type='text'  className="mt4" />
+              <SearchIcon className="mr80 mt8">
+              <BiSearch className="mt12" />
+              </SearchIcon >
+        
+                <Link to="/" className="flex mt8">
+                <VscLocation />
+                  <Text>Select Location</Text>
                 </Link>
-              </div>
+                <span className="mt8">|</span>
+       
+                <Link to="/" className="mt8" >
+                  <Text>Stores & Preschools</Text>
+                </Link>
+                <span className="mt8">|</span>
+                <Link to="/"  className="mt8">
+                  <Text>Support</Text>
+                </Link>
+                <span className="mt8">|</span>
+                <Link to="/"  className="mt8">
+                  <Text>Track Order</Text>
+                </Link>
+                <span className="mt8">|</span>
+                <Link to="/"  className="mt8">
+                  <Text>FirstCry Parenting</Text>
+                </Link>
+                <span className="mt8">|</span>
+            <Link to="/login"  className="mt8">
+              <Text>Login/Register</Text>
+            </Link>
+            <span className="mt8">|</span>
+               
+                <Link to="/"  className="mt8">
+                  <Text>Shortlist</Text>
+                </Link>
+                <span className="mt8">|</span>
+                <Link to="/cart"   className="mt8 ">
+                    <Text className={`inline-message error`}>
+                  Cart( {state.length} )
+                    </Text>
+                </Link>
 
     </div>
 

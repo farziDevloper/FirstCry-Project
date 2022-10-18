@@ -12,31 +12,35 @@ import { Footer } from "./Components/Footer/Footer";
 import { Login } from "./Components/Login/Login";
 import { SignUp } from "./Components/SignUp/SignUp";
 import { useState } from "react";
+import { Profile } from "./Components/Profile/Profile";
 // import { Profile } from "./Components/Profile/Profile";
 
 function App() {
-  const [user , setLoginUser] = useState({
-    name: '',     
-    email: '',
-    password: ''
-  })
+  const [user, setLoginUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
   return (
     <div className="App">
       <NavBar />
       <Head />
 
       <Routes>
-        <Route path="/" element={   <HomePage setLoginUser={setLoginUser} />   } />
+        <Route path="/" element={<HomePage setLoginUser={setLoginUser} />} />
         <Route path={"/products"} element={<ProductPage />} />
         <Route path="/products/:id" element={<ProductSchema />} />
         <Route path={"/cart"} element={<Cart />} />
         <Route path={"/checkout"} element={<CheckOut />} />
         <Route path={"/success"} element={<Sucs />} />
-        <Route path={"/login"} element={<Login setLoginUser={setLoginUser} />} />
+        <Route
+          path={"/login"}
+          element={<Login setLoginUser={setLoginUser} />}
+        />
         <Route path={"/signup"} element={<SignUp />} />
       </Routes>
       <Footer />
-      {/* <Profile  setLoginUser={setLoginUser} /> */}
+      <Profile setLoginUser={user} />
     </div>
   );
 }

@@ -2,9 +2,8 @@ import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import Divider from "@mui/material/Divider";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import  { Text  } from "./Style";
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -35,7 +34,7 @@ const StyledMenu = styled((props) => (
     },
     "& .MuiMenuItem-root": {
       "& .MuiSvgIcon-root": {
-        fontSize: 16,
+        fontSize: 8,
         color: theme.palette.text.secondary,
         marginRight: theme.spacing(1.6),
       },
@@ -71,14 +70,14 @@ export default function CustomizedMenus() {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         All Categories
       </Button>
@@ -91,60 +90,61 @@ export default function CustomizedMenus() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -172,14 +172,15 @@ export const Boyfashion = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
+      
       >
         BOY FASHION
       </Button>
@@ -192,60 +193,60 @@ export const Boyfashion = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text   onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -273,14 +274,14 @@ export const Girlfashion = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         GIRL FASHION
       </Button>
@@ -293,60 +294,60 @@ export const Girlfashion = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
       
       </StyledMenu>
     </div>
@@ -374,14 +375,14 @@ export const FootWear = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         FOOTWEAR
       </Button>
@@ -394,60 +395,60 @@ export const FootWear = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -475,14 +476,14 @@ export const Toys = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         TOYS
       </Button>
@@ -495,60 +496,60 @@ export const Toys = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -576,14 +577,14 @@ export const Diapering = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         DIAPERING
       </Button>
@@ -596,60 +597,60 @@ export const Diapering = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -677,14 +678,14 @@ export const Gear = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         GEAR
       </Button>
@@ -697,60 +698,60 @@ export const Gear = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -778,14 +779,14 @@ export const Feeding = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         FEEDING
       </Button>
@@ -798,60 +799,60 @@ export const Feeding = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -879,14 +880,14 @@ export const Nursery = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         Nursery
       </Button>
@@ -899,60 +900,60 @@ export const Nursery = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -980,14 +981,14 @@ export const Moms = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         MOMS
       </Button>
@@ -1000,60 +1001,60 @@ export const Moms = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -1081,14 +1082,14 @@ export const Health = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         HEALTH
       </Button>
@@ -1101,60 +1102,60 @@ export const Health = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -1182,14 +1183,14 @@ export const Boutiques = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         BOUTIQUES
       </Button>
@@ -1202,60 +1203,60 @@ export const Boutiques = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -1283,14 +1284,14 @@ export const Bathing = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         BATH
       </Button>
@@ -1303,60 +1304,60 @@ export const Bathing = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
    
       </StyledMenu>
     </div>
@@ -1384,14 +1385,14 @@ export const Club = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         CLUB
       </Button>
@@ -1404,60 +1405,60 @@ export const Club = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
       </StyledMenu>
     </div>
   );
@@ -1484,14 +1485,14 @@ export const Carter = () => {
         disableElevation
         onClick={handleClick}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         CARTER'S
       </Button>
@@ -1504,60 +1505,60 @@ export const Carter = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
       </StyledMenu>
     </div>
   );
@@ -1585,14 +1586,14 @@ export const More = () => {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         style={{
-          fontSize: "13px",
-          fontWeight: "bold",
-          marginTop: "10px",
-          padding: "2px",
-          backgroundColor: "transparent",
-          color: "black",
-          marginLeft: "2px",
-        }}
+            fontSize: "12px",
+            fontWeight: 600,
+            marginTop: "10px",
+            padding: "2px",
+            backgroundColor: "transparent",
+            color: "black",
+            marginLeft: "2px",
+          }}
       >
         More
       </Button>
@@ -1605,60 +1606,60 @@ export const More = () => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <Text onClick={handleClose} disableRipple>
           BOY FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GIRL FASHION
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FOOTWEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           TOYS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           DIAPERING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           GEAR
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           FEEDING
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BATH
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           NURSERY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           MOMS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           HEALTH & SAFETY
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BOUTIQUES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           WOMEN'S BEAUTY & CARE
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BIRTHDAYS & GIFTS
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           BPPKS & CD'S
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           SCHOOL SUPPLIES
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           OFFER
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        </Text>
+        <Text onClick={handleClose} disableRipple>
           STORE & PRESCHOOLS
-        </MenuItem>
+        </Text>
       </StyledMenu>
     </div>
   );
