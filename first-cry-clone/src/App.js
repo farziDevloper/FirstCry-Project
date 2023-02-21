@@ -14,7 +14,9 @@ import { SignUp } from "./Components/SignUp/SignUp";
 import { useState } from "react";
 import { Profile } from "./Components/Profile/Profile";
 // import { Profile } from "./Components/Profile/Profile";
-
+import Navigation from "../src/Components/Navigation/index";
+import IconMobile from "../src/assets/images/IconMobile";
+import MaterialInput from "../src/Components/common/UI/MaterialInput/index.js";
 function App() {
   const [user, setLoginUser] = useState({
     name: "",
@@ -23,7 +25,18 @@ function App() {
   });
   return (
     <div className="App">
-      <NavBar />
+      <aside>
+        <Navigation />
+      </aside>
+      <div>
+        <MaterialInput
+          icon={<IconMobile />}
+          name="address2"
+          type="text"
+          placeholder="Address 2"
+        />
+      </div>
+      {/* <NavBar />
       <Head />
 
       <Routes>
@@ -40,7 +53,7 @@ function App() {
         <Route path={"/signup"} element={<SignUp />} />
       </Routes>
       <Footer />
-      <Profile setLoginUser={user} />
+      <Profile setLoginUser={user} /> */}
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.Form {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+  outline: none;
+}
+
+.submit {
+  border: 2px solid #000 !important;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  vertical-align: center;
+}
